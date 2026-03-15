@@ -414,3 +414,252 @@ document.getElementById("ideaResult").innerText=random
 }
 
 </script>
+<script>
+
+async function reply(){
+
+const question=document.getElementById("userInput").value
+
+document.getElementById("aiReply").innerText="Thinking..."
+
+const response=await fetch("https://api.openai.com/v1/chat/completions",{
+method:"POST",
+headers:{
+"Content-Type":"application/json",
+"Authorization":"Bearer YOUR_OPENAI_API_KEY"
+},
+body:JSON.stringify({
+model:"gpt-4o-mini",
+messages:[
+{role:"system",content:"You are an AI assistant on Vivek Anand Shukla's website helping visitors learn about AI research, transport business, startups and technology."},
+{role:"user",content:question}
+]
+})
+})
+
+const data=await response.json()
+
+document.getElementById("aiReply").innerText=
+data.choices[0].message.content
+
+}
+
+</script>
+<!-- Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XXXXXXXX');
+</script>
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://vivekanandshukla498-cyber.github.io/VIVEK-ANAND-SHUKLA-/">
+<!-- YOUTUBE STATS -->
+
+<section class="py-20 bg-slate-100 text-center">
+
+<h3 class="text-3xl font-bold mb-10">YouTube Community</h3>
+
+<div class="max-w-xl mx-auto glass p-8">
+
+<h4 class="text-xl font-semibold mb-4">Subscribers</h4>
+
+<iframe
+height="80"
+width="320"
+src="https://socialcounts.org/youtube-live-subscriber-count/UCnQ8n5A5oJq4aA3b2YkA4Vg"
+frameborder="0">
+</iframe>
+
+</div>
+
+</section>
+<!-- YOUTUBE CHANNEL -->
+
+<section id="youtube" class="py-20 bg-white text-center">
+
+<h3 class="text-3xl font-bold mb-6">YouTube Channel</h3>
+
+<p class="mb-6">
+Watch my latest videos on AI, business ideas, technology and motivation.
+</p>
+
+<a href="https://youtube.com/@vivekanandshukla4168"
+target="_blank"
+class="bg-red-600 text-white px-6 py-3 rounded-lg shadow">
+Visit My YouTube Channel
+</a>
+
+<!-- Latest Video -->
+
+<div class="max-w-4xl mx-auto mt-12">
+
+<iframe
+class="w-full aspect-video rounded-xl"
+src="https://www.youtube.com/embed?listType=user_uploads&list=vivekanandshukla4168">
+</iframe>
+
+</div>
+
+</section>
+<!-- YOUTUBE -->
+
+<section id="youtube" class="py-20 bg-white text-center">
+
+<h3 class="text-3xl font-bold mb-8">YouTube Channel</h3>
+
+<p class="mb-6">
+Watch videos about AI, business ideas, motivation and technology.
+</p>
+
+<a href="https://youtube.com/@vivekanandshukla4168?si=_wLKYIfqGeLM4tJn"
+target="_blank"
+class="bg-red-600 text-white px-6 py-3 rounded-lg shadow">
+Visit My YouTube Channel
+</a>
+
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
+
+<iframe
+class="w-full aspect-video rounded-xl"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+</iframe>
+
+<iframe
+class="w-full aspect-video rounded-xl"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+</iframe>
+
+</div>
+
+</section>
+<!-- STARTUP & INVESTOR HUB -->
+<section class="py-20 bg-white text-center">
+
+<h3 class="text-3xl font-bold mb-12">Startup & Innovation Hub</h3>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+<!-- STARTUP PITCH -->
+
+<div class="glass p-6">
+<h4 class="text-xl font-semibold mb-4">Startup Pitch Vision</h4>
+
+<p class="text-sm mb-4">
+Building technology platforms focused on artificial intelligence,
+transport innovation and digital business ecosystems.
+</p>
+
+<ul class="text-sm text-left space-y-2">
+<li>• AI powered logistics tools</li>
+<li>• Digital startup platforms</li>
+<li>• Automation for business productivity</li>
+<li>• Global logistics technology network</li>
+</ul>
+
+</div>
+
+<!-- AI BUSINESS IDEA GENERATOR -->
+
+<div class="glass p-6">
+
+<h4 class="text-xl font-semibold mb-4">AI Business Idea Generator</h4>
+
+<p class="text-sm mb-4">
+Generate startup ideas using AI thinking models.
+</p>
+
+<button onclick="generateIdea()"
+class="bg-blue-600 text-white px-5 py-3 rounded">
+Generate Idea
+</button>
+
+<p id="ideaResult" class="mt-6 text-sm font-medium"></p>
+
+</div>
+
+<!-- INVESTOR CONTACT -->
+
+<div class="glass p-6">
+
+<h4 class="text-xl font-semibold mb-4">Investor & Collaboration</h4>
+
+<p class="text-sm mb-4">
+Open to collaboration in AI, logistics technology
+and digital innovation projects.
+</p>
+
+<a href="mailto:mayanktyagi8053@gmail.com"
+class="bg-blue-600 text-white px-5 py-3 rounded inline-block">
+Contact for Collaboration
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE KNOWLEDGE PROFILE -->
+
+<section class="py-20 bg-slate-100 text-center">
+
+<h3 class="text-3xl font-bold mb-8">Professional Knowledge Profile</h3>
+
+<p class="max-w-3xl mx-auto mb-8">
+Vivek Anand Shukla is developing a professional platform focused on
+artificial intelligence research, logistics innovation,
+startup experimentation and digital entrepreneurship.
+</p>
+
+<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+<div class="glass p-6">
+<h4 class="font-semibold">AI Research</h4>
+<p class="text-sm">Exploring practical AI use cases for businesses.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="font-semibold">Transport Innovation</h4>
+<p class="text-sm">Researching smart logistics and automation.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="font-semibold">Entrepreneurship</h4>
+<p class="text-sm">Developing ideas for digital startups.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+function generateIdea(){
+
+const ideas=[
+"AI platform for transport route optimization",
+"Smart logistics tracking using machine learning",
+"AI powered CRM assistant for businesses",
+"Digital platform connecting warehouses and transporters",
+"Automation tools for small businesses",
+"AI content creation platform for entrepreneurs"
+]
+
+const random=ideas[Math.floor(Math.random()*ideas.length)]
+
+document.getElementById("ideaResult").innerText=random
+
+}
+
+</script>
