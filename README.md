@@ -292,3 +292,125 @@ if('serviceWorker' in navigator){
 }
 </script></body>
 </html>
+<!-- STARTUP & INVESTOR HUB -->
+<section class="py-20 bg-white text-center">
+
+<h3 class="text-3xl font-bold mb-12">Startup & Innovation Hub</h3>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+<!-- STARTUP PITCH -->
+
+<div class="glass p-6">
+<h4 class="text-xl font-semibold mb-4">Startup Pitch Vision</h4>
+
+<p class="text-sm mb-4">
+Building technology platforms focused on artificial intelligence,
+transport innovation and digital business ecosystems.
+</p>
+
+<ul class="text-sm text-left space-y-2">
+<li>• AI powered logistics tools</li>
+<li>• Digital startup platforms</li>
+<li>• Automation for business productivity</li>
+<li>• Global logistics technology network</li>
+</ul>
+
+</div>
+
+<!-- AI BUSINESS IDEA GENERATOR -->
+
+<div class="glass p-6">
+
+<h4 class="text-xl font-semibold mb-4">AI Business Idea Generator</h4>
+
+<p class="text-sm mb-4">
+Generate startup ideas using AI thinking models.
+</p>
+
+<button onclick="generateIdea()"
+class="bg-blue-600 text-white px-5 py-3 rounded">
+Generate Idea
+</button>
+
+<p id="ideaResult" class="mt-6 text-sm font-medium"></p>
+
+</div>
+
+<!-- INVESTOR CONTACT -->
+
+<div class="glass p-6">
+
+<h4 class="text-xl font-semibold mb-4">Investor & Collaboration</h4>
+
+<p class="text-sm mb-4">
+Open to collaboration in AI, logistics technology
+and digital innovation projects.
+</p>
+
+<a href="mailto:mayanktyagi8053@gmail.com"
+class="bg-blue-600 text-white px-5 py-3 rounded inline-block">
+Contact for Collaboration
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE KNOWLEDGE PROFILE -->
+
+<section class="py-20 bg-slate-100 text-center">
+
+<h3 class="text-3xl font-bold mb-8">Professional Knowledge Profile</h3>
+
+<p class="max-w-3xl mx-auto mb-8">
+Vivek Anand Shukla is developing a professional platform focused on
+artificial intelligence research, logistics innovation,
+startup experimentation and digital entrepreneurship.
+</p>
+
+<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+<div class="glass p-6">
+<h4 class="font-semibold">AI Research</h4>
+<p class="text-sm">Exploring practical AI use cases for businesses.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="font-semibold">Transport Innovation</h4>
+<p class="text-sm">Researching smart logistics and automation.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="font-semibold">Entrepreneurship</h4>
+<p class="text-sm">Developing ideas for digital startups.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+function generateIdea(){
+
+const ideas=[
+"AI platform for transport route optimization",
+"Smart logistics tracking using machine learning",
+"AI powered CRM assistant for businesses",
+"Digital platform connecting warehouses and transporters",
+"Automation tools for small businesses",
+"AI content creation platform for entrepreneurs"
+]
+
+const random=ideas[Math.floor(Math.random()*ideas.length)]
+
+document.getElementById("ideaResult").innerText=random
+
+}
+
+</script>
