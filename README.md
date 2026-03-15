@@ -663,3 +663,67 @@ document.getElementById("ideaResult").innerText=random
 }
 
 </script>
+<!-- CONTACT FORM -->
+
+<section id="contact" class="py-20 text-center">
+
+<h3 class="text-3xl font-bold mb-10">Contact & Collaboration</h3>
+
+<p class="mb-8">
+For business collaborations, startup ideas or research discussions,
+send a message directly.
+</p>
+
+<form action="https://formsubmit.co/vivekanandshukla498@gmail.com" method="POST" class="max-w-xl mx-auto space-y-4">
+
+<input type="text"
+name="name"
+placeholder="Your Name"
+required
+class="w-full border p-3 rounded">
+
+<input type="email"
+name="email"
+placeholder="Your Email"
+required
+class="w-full border p-3 rounded">
+
+<textarea
+name="message"
+placeholder="Your Message"
+required
+class="w-full border p-3 rounded h-32"></textarea>
+
+<button type="submit"
+class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+Send Message
+</button>
+
+</form>
+
+<p class="mt-6 text-sm text-gray-600">
+Or email directly: vivekanandshukla498@gmail.com
+</p>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact" class="py-20 text-center">
+
+<h3 class="text-3xl font-bold mb-6">Contact & Collaboration</h3>
+
+<p class="mb-6">
+For business collaborations, research discussions, or partnerships,
+you can contact me directly by email.
+</p>
+
+<a href="mailto:vivekanandshukla498@gmail.com"
+class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow">
+Email for Collaboration
+</a>
+
+<p class="mt-6 text-sm text-gray-600">
+Email: vivekanandshukla498@gmail.com
+</p>
+
+</section>
