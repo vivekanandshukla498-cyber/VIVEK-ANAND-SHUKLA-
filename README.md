@@ -1,23 +1,3 @@
-website/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── pages
-│   ├── blog.html
-│   ├── projects.html
-│   ├── transport.html
-│   ├── ai.html
-│   └── contact.html
-│
-└── backend
-    └── ai-server.js
-    <!DOCTYPE html>
-<html>
-
-<head>
-
 <title>Vivek Anand Shukla | AI Innovation</title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
